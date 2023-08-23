@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Secondary: Black (#000000) or Charcoal (#333333) */
+.bg-black {
+  background-color: #000000;
+}
+
+.text-black {
+  color: #000000;
+}
+
+.bg-charcoal {
+  background-color: #333333;
+}
+
+.text-charcoal {
+  color: #333333;
+}
+
+/* Accent: Bright Yellow (#FFC107) */
+.bg-bright-yellow {
+  background-color: #FFC107;
+}
+
+.text-bright-yellow {
+  color: #FFC107;
+}
+
+/* Neutral: White (#FFFFFF) or Light Gray (#F5F5F5) */
+.bg-white {
+  background-color: #FFFFFF;
+}
+
+.text-white {
+  color: #FFFFFF;
+}
+
+.bg-light-gray {
+  background-color: #F5F5F5;
+}
+
+.text-light-gray {
+  color: #F5F5F5;
+}
+
+/* Custom Color: Deep Red (#C62828) */
+.bg-deep-red {
+  background-color: #C62828;
+}
+
+.text-deep-red {
+  color: #C62828;
+}

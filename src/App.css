@@ -1,0 +1,48 @@
+:root {
+    --deep-red: #E53935;
+    --black: #000000;
+    --charcoal: #333333;
+    --bright-yellow: #FFC107;
+    --white: #FFFFFF;
+    --light-gray: #F5F5F5;
+}
+
+nav {
+    background: var(--bright-yellow);
+}
+
+nav div a {
+    font-weight: bolder;
+    font-size: x-large;
+    color: white;
+}
+
+nav {
+    height: 10vh;
+}
+
+#root {
+    margin: 0rem;
+}
+
+#featured-content h2 {
+    color: var(--deep-red);
+}
+
+#featured-content p {
+    color: var(--charcoal);
+}
+
+#featured-content {
+    background-color: var(--light-gray) ;
+}
+
+#featured-content div:hover {
+    border: 0.5rem solid var(--deep-red);
+    transition: 250ms;
+}
+
+nav a:hover {
+    border-bottom: 4px var(--deep-red) solid;
+    transition: 250ms;
+}
