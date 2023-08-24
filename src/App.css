@@ -46,3 +46,7 @@ nav a:hover {
     border-bottom: 4px var(--deep-red) solid;
     transition: 250ms;
 }
+
+#hero {
+    height: 100vh;
+}

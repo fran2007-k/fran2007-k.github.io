@@ -18,8 +18,8 @@ function App() {
 
   return (
     <>
-      <nav className='flex gap-5 justify-evenly items-center'>
-        <img className='h-auto w-1/12 flex-col' src="./assets/icon.png" alt="logo" />
+      <nav className='flex gap-5 justify-evenly items-center w-full'>
+        <img className='h-auto w-1/12 flex-col' src="./src/assets/icon.png" alt="logo" />
         
         <div><a href="">Home</a></div>
         <div><a href="">Contact Us</a></div>
@@ -28,16 +28,20 @@ function App() {
         <div><a href="">About Us</a></div>
       </nav>
 
-      <main className='pl-2 pr-2'>
-        <section>
-          {/* Hero section content here */}
+      <main>
+        <section id='hero'>
+          <video className="object-cover absolute -z-50 left-0 right-0 top-0 bottom-0" autoPlay playsInline loop muted>
+            <source src="./src/assets/herovideo.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <h1 className='text-amber-300 text-7xl text-center font-extrabold z-10'>Unlock the World of Kickboxing: Techniques, History, Fitness, and More.</h1>
         </section>
             
-        <section id='featured-content' className='grid grid-flow-col grid-rows-2 justify-items-center gap-2'>
-        {featuredContent("./src/assets/kickboxing-techniques.jpg", "Kickboxing Techniques", "Briefly explain the importance of kickboxing techniques...", "  techniques.html")}
-        {featuredContent("./src/assets/kickboxing-history.jpg", "History of Kickboxing", "Explore the evolution and significance of kickboxing...", "history.html")}
-        {featuredContent("./src/assets/fitness-benefits.jpg", "Fitness Benefits", "Discover the physical and mental advantages of kickboxing...", "fitness.html")}
-        {featuredContent("./src/assets/kickboxing-gear.jpg", "Gear Recommendations", "Find the best gear for an optimal kickboxing experience...", "gear.html")}
+        <section id='featured-content' className='relative grid grid-flow-col grid-rows-2 justify-items-center gap-2'>
+          {featuredContent("./src/assets/kickboxing-techniques.jpg", "Kickboxing Techniques", "Briefly explain the importance of kickboxing techniques...", "  techniques.html")}
+          {featuredContent("./src/assets/kickboxing-history.jpg", "History of Kickboxing", "Explore the evolution and significance of kickboxing...", "history.html")}
+          {featuredContent("./src/assets/fitness-benefits.jpg", "Fitness Benefits", "Discover the physical and mental advantages of kickboxing...", "fitness.html")}
+          {featuredContent("./src/assets/kickboxing-gear.jpg", "Gear Recommendations", "Find the best gear for an optimal kickboxing experience...", "gear.html")}
         </section>
       </main>
 
