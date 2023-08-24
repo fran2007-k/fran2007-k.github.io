@@ -19,7 +19,7 @@ function App() {
   return (
     <>
       <nav className='flex gap-5 justify-evenly items-center w-full'>
-        <img className='h-auto w-1/12 flex-col' src="./public/media/icon.png" alt="logo" />
+        <img className='h-auto w-1/12 flex-col' src="./media/icon.png" alt="logo" />
         
         <div><a href="">Home</a></div>
         <div><a href="">Contact Us</a></div>
@@ -38,10 +38,10 @@ function App() {
         </section>
             
         <section id='featured-content' className='relative grid grid-flow-col grid-rows-2 justify-items-center gap-2'>
-          {featuredContent("./public/media/kickboxing-techniques.jpg", "Kickboxing Techniques", "Briefly explain the importance of kickboxing techniques...", "  techniques.html")}
-          {featuredContent("./public/media/kickboxing-history.jpg", "History of Kickboxing", "Explore the evolution and significance of kickboxing...", "history.html")}
-          {featuredContent("./public/media/fitness-benefits.jpg", "Fitness Benefits", "Discover the physical and mental advantages of kickboxing...", "fitness.html")}
-          {featuredContent("./public/media/kickboxing-gear.jpg", "Gear Recommendations", "Find the best gear for an optimal kickboxing experience...", "gear.html")}
+          {featuredContent("./media/kickboxing-techniques.jpg", "Kickboxing Techniques", "Briefly explain the importance of kickboxing techniques...", "  techniques.html")}
+          {featuredContent("./media/kickboxing-history.jpg", "History of Kickboxing", "Explore the evolution and significance of kickboxing...", "history.html")}
+          {featuredContent("./media/fitness-benefits.jpg", "Fitness Benefits", "Discover the physical and mental advantages of kickboxing...", "fitness.html")}
+          {featuredContent("./media/kickboxing-gear.jpg", "Gear Recommendations", "Find the best gear for an optimal kickboxing experience...", "gear.html")}
         </section>
       </main>
 
