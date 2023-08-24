@@ -31,7 +31,7 @@ function App() {
       <main>
         <section id='hero'>
           <video className="object-cover absolute -z-50 left-0 right-0 top-0 bottom-0" autoPlay playsInline loop muted>
-            <source src="./public/media/herovideo.mp4" type="video/mp4" />
+            <source src="./media/herovideo.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
           <h1 className='text-amber-300 text-7xl text-center font-extrabold z-10'>Unlock the World of Kickboxing: Techniques, History, Fitness, and More.</h1>
