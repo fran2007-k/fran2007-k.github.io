@@ -9,6 +9,7 @@
 
 nav {
     background: var(--bright-yellow);
+    height: 10vh;
 }
 
 nav div a {
@@ -49,7 +50,7 @@ nav a:hover {
 }
 
 #hero {
-    height: 100vh;
+    height: 90vh;
 }
 
 #hero button {

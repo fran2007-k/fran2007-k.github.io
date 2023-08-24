@@ -52,7 +52,7 @@ function App() {
 
       <footer className='p-12 h-fit bg-gray-500 flex justify-between'>
         <span className='text-gray-300 font-extralight'>The Kickboxing Hub</span>
-        {/* Remember to change the mail */}
+        {/* Remember to change the mail and change the icon*/}
         <a href='mailto:ffernandezbeccari@hotmail.com' className='text-gray-300 font-extralight border-b border-solid border-gray-300'>Mail</a>
       </footer>
     </>
