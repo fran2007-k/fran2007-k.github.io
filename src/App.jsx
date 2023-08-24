@@ -3,7 +3,7 @@ import './App.css'
 
 function featuredContent(src, alt, text, link) {
     return (
-      <div className='p-8 w-4/5 mt-4'>
+      <div className='p-8 w-4/5 m-2 pb-0 '>
               <img className='w-full h-auto' src={src} alt={alt} />
               <h2 className='text-3xl'>{alt}</h2>
               <p>{text}</p>
@@ -34,10 +34,15 @@ function App() {
             <source src="./media/herovideo.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
-          <h1 className='text-amber-300 text-7xl text-center font-extrabold z-10'>Unlock the World of Kickboxing: Techniques, History, Fitness, and More.</h1>
+          <h1 className='text-amber-300 text-7xl text-center font-extrabold z-10 select-none'>Unlock the World of Kickboxing: Techniques, History, Fitness, and More.</h1>
+
+          <div className='flex justify-center h-1/5 mt-40'>
+            <button className='w-1/4 rounded-xl text-white text-4xl font-extrabold' type="button"><a href="">Join now</a></button>
+          </div>
+
         </section>
             
-        <section id='featured-content' className='relative grid grid-flow-col grid-rows-2 justify-items-center gap-2'>
+        <section id='featured-content' className='relative grid grid-flow-col grid-rows-2 justify-items-center gap-2 pt-24'>
           {featuredContent("./media/kickboxing-techniques.jpg", "Kickboxing Techniques", "Briefly explain the importance of kickboxing techniques...", "  techniques.html")}
           {featuredContent("./media/kickboxing-history.jpg", "History of Kickboxing", "Explore the evolution and significance of kickboxing...", "history.html")}
           {featuredContent("./media/fitness-benefits.jpg", "Fitness Benefits", "Discover the physical and mental advantages of kickboxing...", "fitness.html")}

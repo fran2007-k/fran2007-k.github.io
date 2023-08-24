@@ -38,15 +38,20 @@ nav {
 }
 
 #featured-content div:hover {
-    border: 0.5rem solid var(--deep-red);
+    border: 0.25rem solid var(--deep-red);
+    margin: 0.25rem;
     transition: 250ms;
 }
 
 nav a:hover {
-    border-bottom: 4px var(--deep-red) solid;
+    color: rgb(225, 225, 225);
     transition: 250ms;
 }
 
 #hero {
     height: 100vh;
+}
+
+#hero button {
+    background: var(--deep-red);
 }
