@@ -40,7 +40,7 @@ nav div a {
 }
 
 #featured-content div:hover {
-    border: 0.25rem solid var(--deep-red);
+    border: 0.25rem solid var(--charcoal);
     margin: 0.25rem;
     transition: 250ms;
 }
@@ -51,7 +51,6 @@ nav a:hover {
 }
 
 #hero {
-    margin-top: 10vh;
     height: 90vh;
 }
 

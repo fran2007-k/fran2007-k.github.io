@@ -1,25 +1,29 @@
 import Image from 'next/image'
 import './page.css'
 
-function featuredContent(src, alt, text, link) {
+function featuredContent(src, alt, text, link, att) {
   return (
     <div className='p-8 w-4/5 m-2 pb-0 '>
-      <a href={link}>
-        <img className='w-full h-auto' src={src} alt={alt} />
-        <h2 className='text-3xl'>{alt}</h2>
+        <a href={link}>
+          <img className='w-full h-auto' src={src} alt={alt} />
+        </a>
+        <span><a className='text-blue-700 text-xs' href={att}>Source</a></span>
+        <a href={link}>
+          <h2 className='text-3xl'>{alt}</h2>
+        </a>
         <p>{text}</p>
-      </a>
+      
       <a className='text-blue-700' href={link}>Learn More</a>  
       </div>
   )
 }
 
-function Nav() {
+export function Nav() {
   return (
     <nav className='flex gap-5 justify-evenly items-center w-full'>
         <img className='h-auto w-1/12 flex-col' src="/media/icon.png" alt="logo" />
         
-        <div><a href="">Home</a></div>
+        <div><a href="/">Home</a></div>
         <div><a href="">Contact Us</a></div>
         <div><a href="">Privacy Policy</a></div>
         <div><a href="">ToS</a></div>
@@ -49,10 +53,10 @@ function App() {
         </section>
             
         <section id='featured-content' className='relative grid grid-flow-col grid-rows-2 justify-items-center gap-2 pt-24'>
-          {featuredContent("./media/kickboxing-techniques.jpg", "Kickboxing Techniques", "Briefly explain the importance of kickboxing techniques...", "  techniques.html")}
-          {featuredContent("./media/kickboxing-history.jpg", "History of Kickboxing", "Explore the evolution and significance of kickboxing...", "history.html")}
-          {featuredContent("./media/fitness-benefits.jpg", "Fitness Benefits", "Discover the physical and mental advantages of kickboxing...", "fitness.html")}
-          {featuredContent("./media/kickboxing-gear.jpg", "Gear Recommendations", "Find the best gear for an optimal kickboxing experience...", "./articles/gear-recommendations")}
+          {featuredContent("./media/kickboxing-techniques.jpg", "Kickboxing Techniques", "Briefly explain the importance of kickboxing techniques...", "  techniques.html", "https://pixabay.com/es/users/claudio_scott-4913238/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2282001")}
+          {featuredContent("./media/kickboxing-history.jpg", "History of Kickboxing", "Explore the evolution and significance of kickboxing...", "history.html", "https://pixabay.com/users/patrickbrassard0-1312305/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=894190")}
+          {featuredContent("./media/fitness-benefits.jpg", "Fitness Benefits", "Discover the physical and mental advantages of kickboxing...", "fitness.html", "https://pixabay.com/es/users/stevepb-282134/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2465478")}
+          {featuredContent("./media/kickboxing-gear.jpg", "Gear Recommendations", "Find the best gear for an optimal kickboxing experience...", "./articles/gear-recommendations", "https://www.freepik.com/free-photo/view-pair-boxing-gloves_41553999.htm#query=kickboxing%20gear&position=4&from_view=search&track=ais")}
         </section>
       </main>
 
