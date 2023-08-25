@@ -1,0 +1,60 @@
+:root {
+    --deep-red: #E53935;
+    --black: #000000;
+    --charcoal: #333333;
+    --bright-yellow: #FFC107;
+    --white: #FFFFFF;
+    --light-gray: #F5F5F5;
+}
+
+nav {
+    background: var(--bright-yellow);
+    height: 10vh;
+    width: 100vw;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 99;
+}
+
+nav div a {
+    font-weight: bolder;
+    font-size: x-large;
+    color: white;
+}
+
+#root {
+    margin: 0rem;
+}
+
+#featured-content h2 {
+    color: var(--deep-red);
+}
+
+#featured-content p {
+    color: var(--charcoal);
+}
+
+#featured-content {
+    background-color: var(--light-gray) ;
+}
+
+#featured-content div:hover {
+    border: 0.25rem solid var(--deep-red);
+    margin: 0.25rem;
+    transition: 250ms;
+}
+
+nav a:hover {
+    color: rgb(225, 225, 225);
+    transition: 250ms;
+}
+
+#hero {
+    margin-top: 10vh;
+    height: 90vh;
+}
+
+#hero button {
+    background: var(--deep-red);
+}
