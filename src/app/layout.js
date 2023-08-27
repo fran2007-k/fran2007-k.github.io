@@ -6,6 +6,7 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata = {
   title: 'The Kickboxing Hub',
   description: 'The homepage for all things Kickboxing',
+  icon: '/media/icon.png',
 }
 
 export default function RootLayout({ children }) {

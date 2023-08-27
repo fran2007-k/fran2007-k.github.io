@@ -18,6 +18,38 @@ function featuredContent(src, alt, text, link, att) {
   )
 }
 
+export function Article(intro, content, conclusion) {
+  if (!Array.isArray(content)) {
+    throw new Error('content is not an array');
+  }
+
+  return (
+    <div>
+      <p className='mb-8'>{intro}</p>
+      {content.map((paragraph, index) => {
+        const lines = paragraph.split('\n'); // Split paragraph into lines
+        const title = lines[0]; // First line is the title
+        const contentLines = lines.slice(1); // Rest of the lines are content
+        
+        return (
+          <div key={index}>
+            <ol>
+              <li className='text-xl font-extrabold'>{title}</li>
+              {contentLines.map((line, lineIndex) => (
+                <p className='mb-8' key={lineIndex}>{line}</p>
+              ))}
+            </ol>
+          </div>
+        );
+      })}
+      <span className='text-xl font-extrabold'>Conclusion</span>
+      <p className=''>{conclusion}</p>
+    </div>
+  );
+}
+
+
+
 export function Nav() {
   return (
     <nav className='flex gap-5 justify-evenly items-center w-full'>
