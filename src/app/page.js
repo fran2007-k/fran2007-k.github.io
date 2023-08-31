@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import './page.css'
+import { list } from 'postcss';
 
 function featuredContent(src, alt, text, link, att) {
   return (

@@ -25,10 +25,10 @@ function Gear() {
                         "10. Gym Bag \n Keep all your gear organized in a spacious gym bag. Look for one with multiple compartments to separate clean gear from used items.",],
                         "Investing in the right kickboxing gear is a must for anyone serious about training and competing in this exhilarating sport. Each piece of equipment plays a vital role in ensuring your safety, comfort, and performance during training sessions and matches. Whether you're a beginner or a seasoned fighter, having the right gear can help you elevate your skills and reach your full potential in the world of kickboxing.")}
 
-                        <h3 className='text-xl font-extrabold mt-8'>Gear Options</h3>
+                        <h3 className='text-xl font-extrabold mt-8'>Gear Examples</h3>
                         <ol>
                             <li><b>Boxing Gloves:</b> <a href='https://www.everlast.com/pro-style-muay-thai-glove'>Everlast Pro Style</a>, <a href='https://www.leone1947.com/en/gloves/boxing-gloves/boxing-gloves-flag-gn212#GN212-01'>Leone Boxing Gloves Flag</a>, <a href='https://www.fairtex.com/universal-gloves-tight-fit-design.html'>Fairtex Muay Thai.</a></li>
-                            <li><b>Hand Wraps:</b> Meister Adult MMA, RDX Boxing, Sanabul Elastic.</li>
+                            <li><b>Hand Wraps:</b> Any handwraps from your local store which are around 4 meters long.</li>
                             <li><b>Kickboxing Shorts:</b> Hayabusa Chikara 4, Revgear Deluxe, Anthem Athletics Infinity.</li>
                             <li><b>Mouthguard:</b> Shock Doctor Gel Max, Venum Challenger, SISU Aero NextGen.</li>
                             <li><b>Shin Guards:</b> Fairtex Competition, Venum Elite Standup, Hayabusa T3 Striking.</li>
