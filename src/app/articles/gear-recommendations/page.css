@@ -12,3 +12,8 @@
 li a {
     color: rgb(29 78 216);
 }
+
+.gear-images {
+    width: 100%;
+    margin-bottom: 10px;
+}
